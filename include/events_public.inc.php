@@ -58,11 +58,11 @@ SELECT color
   }
   elseif (isset($pwg_loaded_plugins['ExtendedDescription']))
   {
-    $ret = '[lang=all]<span style="color:' . $color . ';">[/lang]' . $tag_name . '[lang=all]</span>[/lang]';
+    $ret = '[lang=all]:<span style="color:' . $color . ';">[/lang]' . $tag_name . '[lang=all]</span>[/lang]';
   }
   else
   {
-    $ret = '<span style="color:' . $color . ';">' . $tag_name . '</span>';
+    $ret = ':<span style="color:' . $color . ';">' . $tag_name . '</span>';
   }
 
   $typetags_cache['tags'][$tag_name] = $ret;
